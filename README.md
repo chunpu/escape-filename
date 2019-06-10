@@ -5,23 +5,22 @@ Convert string to safe file name for Unix or Windows, But still look similar
 - Unix-like System Rereserved: `/`
 - Windows System Rereserved: [`<>:"/\|?*`](http://msdn.microsoft.com/en-us/library/aa365247%28VS.85%29#naming_conventions)
 
-### Install
+## Install
 
 ```sh
 $ npm install escape-filename
 ```
 
-### Usage
+## Usage
 
 ```js
-var escapeFile = require('escape-filename')
-var fs = require('fs')
+const escapeFile = require('escape-filename')
+const fs = require('fs')
 
-var str = 'foo / bar : | * \\.test'
+const str = 'foo / bar : | * \\.test'
 
-var escaped = escapeFile.escape(str)
-
-console.log(escaped) // => "foo ∕ bar ꞉ ❘ ﹡ ﹨.test"
+const escaped = escapeFile.escape(str)
+// => "foo ∕ bar ꞉ ❘ ﹡ ﹨.test"
 
 fs.writeFile(escaped, 'test file', err => {
   if (!err) {
@@ -30,17 +29,25 @@ fs.writeFile(escaped, 'test file', err => {
 })
 ```
 
-### Api
+## Api
 
-```js
-escapeFile.escape(fileName)
+### escapeFile.escape(fileName)
 
-escapeFile.unescape(escapedFileName)
+Escape filename
 
-escapeFile.isEqual(fileName, escapedFileName)
-```
+### escapeFile.unescape(escapedFileName)
 
-### Reference
+Unescape filename
+
+### escapeFile.isEqual(fileName, escapedFileName)
+
+Compare two string after unescape filename
+
+## Reference
 
 - [Naming Files, Paths, and Namespaces](https://docs.microsoft.com/zh-cn/windows/desktop/FileIO/naming-a-file#naming_conventions)
 - [Unicode Search](https://unicode-search.net/unicode-namesearch.pl?term=COLON)
+
+## License
+
+ISC
