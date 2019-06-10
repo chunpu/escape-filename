@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "min-util": "^3.6.1"
+  },
+  "name": "escape-filename",
+  "description": "[<>:\"/\\|?*](http://msdn.microsoft.com/en-us/library/aa365247%28VS.85%29#naming_conventions)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
