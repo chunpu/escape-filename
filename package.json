@@ -3,8 +3,8 @@
     "min-util": "^3.6.1"
   },
   "name": "escape-filename",
-  "description": "Convert file name to Safe String, but still look Similar",
-  "version": "1.1.0",
+  "description": "Convert string to safe filename for Unix or Windows, But still look similar",
+  "version": "1.1.2",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {

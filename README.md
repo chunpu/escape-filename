@@ -1,6 +1,6 @@
 # escape-filename
 
-Convert string to safe file name for Unix or Windows, But still look similar
+Convert string to safe filename for Unix or Windows, But still look similar for reading
 
 - Unix-like System Rereserved: `/`
 - Windows System Rereserved: [`<>:"/\|?*`](http://msdn.microsoft.com/en-us/library/aa365247%28VS.85%29#naming_conventions)
