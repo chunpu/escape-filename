@@ -14,13 +14,13 @@ var replaceMap = {
 var invertReplaceMap = _.invert(replaceMap)
 
 function escapeFileName(fileName) {
-  return fileName.split('').forEach(item => {
+  return fileName.split('').map(item => {
     return replaceMap[item] || item
   }).join('')
 }
 
 function unEscapeFileName(fileName) {
-  return fileName.split('').forEach(item => {
+  return fileName.split('').map(item => {
     return invertReplaceMap[item] || item
   }).join('')
 }
@@ -32,8 +32,6 @@ function isEqual(str1, str2) {
 function print() {
   console.log(replaceMap)
 }
-
-print()
 
 exports.escape = escapeFileName
 exports.unescape = unEscapeFileName
