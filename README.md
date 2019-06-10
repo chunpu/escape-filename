@@ -18,11 +18,10 @@ const escapeFile = require('escape-filename')
 const fs = require('fs')
 
 const str = 'foo / bar : | * \\.test'
-
 const escaped = escapeFile.escape(str)
 // => "foo ∕ bar ꞉ ❘ ﹡ ﹨.test"
 
-fs.writeFile(escaped, 'test file', err => {
+fs.writeFile(escaped, 'test filename', err => {
   if (!err) {
     console.log('write success')
   }
