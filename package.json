@@ -3,13 +3,13 @@
     "min-util": "^3.6.1"
   },
   "name": "escape-filename",
-  "description": "[<>:\"/\\|?*](http://msdn.microsoft.com/en-us/library/aa365247%28VS.85%29#naming_conventions)",
+  "description": "Convert file name to Safe String, but still look Similar",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
     "test": "node test && echo 'all passed!'"
   },
-  "author": "",
+  "author": "chunpu",
   "license": "ISC"
 }
